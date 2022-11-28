@@ -1,0 +1,4 @@
+/node_modules
+cypress/integration/.DS_Store
+cypress/integration/PageObject/.DS_Store
+.DS_Store

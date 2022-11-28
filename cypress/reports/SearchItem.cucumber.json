@@ -1,0 +1,314 @@
+[
+  {
+    "description": "    As a User\n    In order to use the application\n    I want to Search an Item and the see Specifications",
+    "keyword": "Feature",
+    "name": "Search For an Item In Amazon Website",
+    "line": 1,
+    "id": "search-for-an-item-in-amazon-website",
+    "tags": [],
+    "uri": "SearchItem.feature",
+    "elements": [
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-should-be-able-to-search-an-item",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "A user should be able to search an Item",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 2904000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 4212000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Validate list of Items",
+            "result": {
+              "status": "failed",
+              "duration": 109000000,
+              "error_message": "AssertionError: expected 'Men\\'s OXYFIT (N) Walking Shoe  ' to include 'Shoes'\n    at Context.eval (cypress/integration/PageObject/PageActions/SearchItemAction.js:66:32)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-search-for-an-item-and-select-brand-name",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "A User search for an Item and Select Brand Name",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 2810000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 4079000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Select Brand options",
+            "result": {
+              "status": "passed",
+              "duration": 4842000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Validate list of Items with Brand Name",
+            "result": {
+              "status": "passed",
+              "duration": 279000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-search-for-an-item-and-select-price-range",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "A User search for an Item and Select Price Range",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 3245000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 5716000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Select Price from Available option range",
+            "result": {
+              "status": "passed",
+              "duration": 9779000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Validate list of Items with price range",
+            "result": {
+              "status": "passed",
+              "duration": 465000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-search-for-an-item-and-enter-min-and-max-price-range",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "A User search for an Item and Enter min and max Price range",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 9376000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 9806000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "Enter min and max price range and Click on Go button",
+            "result": {
+              "status": "passed",
+              "duration": 6763000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "Validate list of Items with Entered price range",
+            "result": {
+              "status": "passed",
+              "duration": 459000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-search-for-an-item-and-select-size-for-availability",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "A User search for an Item and Select size For availability",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 3141000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 4110000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "Select the size of shoes",
+            "result": {
+              "status": "passed",
+              "duration": 3712000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Select one of the Item",
+            "result": {
+              "status": "passed",
+              "duration": 6445000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "Validate list of Items with sizes",
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-for-an-item-in-amazon-website;a-user-search-for-an-item-and-select-sort-by-option",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "A User search for an Item and Select Sort by option",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User should navigate to Website",
+            "result": {
+              "status": "passed",
+              "duration": 4113000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "User enter an Item and Click on Search Button",
+            "result": {
+              "status": "passed",
+              "duration": 4705000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "Select the Sort by option",
+            "result": {
+              "status": "passed",
+              "duration": 521000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "Validate sorted list of Items details",
+            "result": {
+              "status": "passed",
+              "duration": 5585000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

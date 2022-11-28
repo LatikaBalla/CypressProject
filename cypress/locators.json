@@ -1,0 +1,37 @@
+{
+  "searchPage": {
+    "searchBox": "#twotabsearchtextbox",
+    "searchButton": "#nav-search-submit-button"
+  },
+  "brandName": {
+    "brandPuma": "//span[text()='Puma' and @class='a-size-base a-color-base']",
+    "brandBATA": "//span[text()='BATA' and @class='a-size-base a-color-base']",
+    "seeMore1": "//span[text()='See more' and @class='a-expander-prompt']",
+    "seeMore": ".a-expander-prompt",
+    "seeLess": "//span[text()='See Less']"
+  },
+  "priceRange": {
+    "priceUnder_500": "//span[contains(text(),'Under ₹500')]",
+    "price500_1000": "//span[contains(text(),'₹500 - ₹1,000')]",
+    "price1000_2500": "//span[contains(text(),'₹1,000 - ₹2,500')]",
+    "price2500_5000": "//span[contains(text(),'₹2,500 - ₹5,000')]",
+    "minPrice": "#low-price",
+    "maxPrice": "#high-price",
+    "goButton": ".a-button-input"
+  },
+  "size": {
+    "size_4": "//button[@value='4']",
+    "size_5": "//button[@value='5']",
+    "size_6": "//button[@value='6']",
+    "size_7": "//button[@value='7']",
+    "sizeResult": "//a[@class='a-link-normal s-no-outline']",
+    "valSize": "select#native_dropdown_selected_size_name option:selected"
+  },
+  "sortOption": {
+    "sortBy": "//span[@id='a-autoid-0-announce']",
+    "sortLowtohigh": "#s-result-sort-select_1",
+    "sortHightolow": "#s-result-sort-select_2",
+    "sortAvgcustomerReview": "#s-result-sort-select_3",
+    "sortNewestArrival": "#s-result-sort-select_4"
+  }
+}
