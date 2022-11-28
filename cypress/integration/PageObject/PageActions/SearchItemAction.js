@@ -100,6 +100,7 @@ export class SearchItemAction {
         const myarr=new Array(80)
         let i=0,count=0;
         cy.wait(5000)
+        cy.log('-----')
         cy.get('.a-price-whole',{timeout: 3000}).each($ele =>
         {
             const d = $ele.text()
