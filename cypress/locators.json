@@ -1,7 +1,11 @@
 {
   "searchPage": {
     "searchBox": "#twotabsearchtextbox",
-    "searchButton": "#nav-search-submit-button"
+    "searchButton": "#nav-search-submit-button",
+   "category":"//a[@class='a-link-normal s-navigation-item']",
+   "valCategory":"//li[@class='a-spacing-micro s-navigation-indent-2']"
+
+ 
   },
   "brandName": {
     "brandPuma": "//span[text()='Puma' and @class='a-size-base a-color-base']",
@@ -24,7 +28,8 @@
     "size_5": "//button[@value='5']",
     "size_6": "//button[@value='6']",
     "size_7": "//button[@value='7']",
-    "sizeResult": "//a[@class='a-link-normal s-no-outline']",
+
+    "sizeResult":"//a[@class='a-link-normal s-no-outline']",
     "valSize": "select#native_dropdown_selected_size_name option:selected"
   },
   "sortOption": {
@@ -32,6 +37,7 @@
     "sortLowtohigh": "#s-result-sort-select_1",
     "sortHightolow": "#s-result-sort-select_2",
     "sortAvgcustomerReview": "#s-result-sort-select_3",
-    "sortNewestArrival": "#s-result-sort-select_4"
+    "sortNewestArrival": "#s-result-sort-select_4",
+
   }
 }

@@ -15,6 +15,16 @@ export class SearchItemAction {
     clickOnSearchButton() {
         searchItem.searchButtonElement().click()
     }
+    selectCataegoryName() {
+        searchItem.categoryElement()
+        .children()
+        .eq(6)
+        .click({ force: true })
+        .should('have.text',tdata.searchItemNameElement())
+    }
+    validateCategoryResult()  {
+        searchItem.valCategoryElements().should('have.length','5')
+    }
     clickBrandName() {
         searchItem.brandNamePumaElement().click()
     }
@@ -53,18 +63,18 @@ export class SearchItemAction {
             .eq(1)
             .click({ force: true });
     }
+   
     validateSizeResult() {
         searchItem.valSizeElement().should('have.text', ' 6 UK ')
     }
+   
     selectOptionInSortBy() {
         searchItem.sortByOptionElement().click()
         searchItem.sortLowtoHighElement().click()
     }
     validateSearchItemList() {
-        cy.get('h2').each($ele => {
-            const d = $ele.text()
-                expect(d).to.be.include(tdata.searchItemNameElement())
-        })
+
+        cy.get('.cat-link').should('include.text',tdata.searchItemNameElement())
     }
     validatePriceRangeResult() {
         cy.get('.a-price-whole').each($ele => {
@@ -96,14 +106,16 @@ export class SearchItemAction {
                 expect(false).to.be.false
             } })
     }
-    validateSortByResult() {
+    validateSortByResult() 
+    {
      
-        cy.wait(5000)
-        cy.get('.a-price-whole',{timeout: 3000}).each($ele =>
-        {
-            const d = $ele.text()
-            cy.log(d);
-        }) 
+       cy.wait(5000)
+       cy.get('.a-price-whole').each($el=>{
+        let d=parseInt($el.text())
+        let m=parseInt(tdata.sortMinValueElement())
+        let mx=parseInt(tdata.sortMaxValueElement())
+       expect(d).to.be.within(m,mx)
+       })
     }
 
 }

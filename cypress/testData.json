@@ -3,6 +3,8 @@
         "searchItemName": "Shoes",
         "minValue": "600",
         "maxValue": "800",
-        "brandName": "BATA"
+        "brandName": "BATA",
+        "sortMin":"1",
+        "sortMax":"200000"
     }
 }

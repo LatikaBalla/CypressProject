@@ -13,6 +13,16 @@ export default class SearchItemElements {
             timeout: 30000,
         });
     }
+    categoryElement() {
+        return cy.xpath(locator.searchPage.category, {
+            timeout: 30000,
+        });
+    }
+    valCategoryElements() {
+        return cy.xpath(locator.searchPage.valCategory, {
+            timeout: 30000,
+        });
+    }
     brandNamePumaElement() {
         return cy.xpath(locator.brandName.brandPuma, {
             timeout: 30000,
@@ -84,6 +94,8 @@ export default class SearchItemElements {
 
         });
     }
+
+
     valSizeElement() {
         return cy.get(locator.size.valSize, {
             timeout: 30000,

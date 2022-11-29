@@ -15,4 +15,10 @@ export default class SearchTestDataElements {
     brandNameValueElement() {
         return tdata.search.brandName
     }
+    sortMinValueElement() {
+        return tdata.search.sortMin
+    }
+    sortMaxValueElement() {
+        return tdata.search.sortMax
+    }
 }
