@@ -17,13 +17,13 @@ export class SearchItemAction {
     }
     selectCataegoryName() {
         searchItem.categoryElement()
-        .children()
-        .eq(6)
-        .click({ force: true })
-        .should('have.text',tdata.searchItemNameElement())
+            .children()
+            .eq(6)
+            .click({ force: true })
+            .should('have.text', tdata.searchItemNameElement())
     }
-    validateCategoryResult()  {
-        searchItem.valCategoryElements().should('have.length','5')
+    validateCategoryResult() {
+        searchItem.valCategoryElements().should('have.length', '5')
     }
     clickBrandName() {
         searchItem.brandNamePumaElement().click()
@@ -63,22 +63,22 @@ export class SearchItemAction {
             .eq(1)
             .click({ force: true });
     }
-   
+
     validateSizeResult() {
         searchItem.valSizeElement().should('have.text', ' 6 UK ')
     }
-   
+
     selectOptionInSortBy() {
         searchItem.sortByOptionElement().click()
         searchItem.sortLowtoHighElement().click()
     }
     validateSearchItemList() {
 
-        cy.get('.cat-link').should('include.text',tdata.searchItemNameElement())
+        cy.get('.cat-link').should('include.text', tdata.searchItemNameElement())
     }
     validatePriceRangeResult() {
         cy.get('.a-price-whole').each($ele => {
-            const d = $ele.text()
+            const d = parseInt($ele.text())
             if (d < 500) {
                 expect(true).to.be.true
             }
@@ -92,30 +92,30 @@ export class SearchItemAction {
                 expect(true).to.be.true
             } else {
                 expect(false).to.be.false
-            } })
+            }
+        })
     }
     validateEnteredPriceResult() {
 
         cy.get('.a-price-whole').each($ele => {
-            const d = $ele.text()
+            const d =parseInt( $ele.text())
 
-            if (d >= tdata.minValueElement() && d <= tdata.maxValueElement()) {
+            if (d >=parseInt( tdata.minValueElement() )&& d <= parseInt(tdata.maxValueElement())) {
                 expect(true).to.be.true
             }
             else {
                 expect(false).to.be.false
-            } })
+            }
+        })
     }
-    validateSortByResult() 
-    {
-     
-       cy.wait(5000)
-       cy.get('.a-price-whole').each($el=>{
-        let d=parseInt($el.text())
-        let m=parseInt(tdata.sortMinValueElement())
-        let mx=parseInt(tdata.sortMaxValueElement())
-       expect(d).to.be.within(m,mx)
-       })
+    validateSortByResult() {
+        cy.wait(5000)
+        cy.get('.a-price-whole').each($el => {
+            let d = parseInt($el.text())
+            let min= parseInt(tdata.sortMinValueElement())
+            let max = parseInt(tdata.sortMaxValueElement())
+            expect(d).to.be.within(min,max)
+        })
     }
 
 }

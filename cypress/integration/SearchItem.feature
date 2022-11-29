@@ -29,5 +29,5 @@ Feature: Search For an Item In Amazon Website
 
     Scenario: A User search for an Item and Select Sort by option
         And  Select the Sort by option
-        Then Validate sorted list of Items details
+        Then Validate sorted list of Items
 

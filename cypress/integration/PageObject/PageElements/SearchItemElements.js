@@ -54,7 +54,6 @@ export default class SearchItemElements {
             timeout: 30000,
         });
     }
-
     maxPriceElement() {
         return cy.get(locator.priceRange.maxPrice, {
             timeout: 30000,
@@ -75,14 +74,11 @@ export default class SearchItemElements {
             timeout: 30000,
         });
     }
-
     sortLowtoHighElement() {
         return cy.get(locator.sortOption.sortLowtohigh, {
             timeout: 30000,
         });
     }
-
-
     sizeElement() {
         return cy.xpath(locator.size.size_6, {
             timeout: 30000,
@@ -91,15 +87,11 @@ export default class SearchItemElements {
     sizeResultElement() {
         return cy.xpath(locator.size.sizeResult, {
             timeout: 30000,
-
         });
     }
-
-
     valSizeElement() {
         return cy.get(locator.size.valSize, {
             timeout: 30000,
-
         });
     }
 }

@@ -4,8 +4,6 @@
     "searchButton": "#nav-search-submit-button",
    "category":"//a[@class='a-link-normal s-navigation-item']",
    "valCategory":"//li[@class='a-spacing-micro s-navigation-indent-2']"
-
- 
   },
   "brandName": {
     "brandPuma": "//span[text()='Puma' and @class='a-size-base a-color-base']",
