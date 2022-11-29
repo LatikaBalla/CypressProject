@@ -97,27 +97,13 @@ export class SearchItemAction {
             } })
     }
     validateSortByResult() {
-        const myarr=new Array(80)
-        let i=0,count=0;
+     
         cy.wait(5000)
-        cy.log('-----')
         cy.get('.a-price-whole',{timeout: 3000}).each($ele =>
         {
             const d = $ele.text()
-            myarr[i]=d;
-            cy.log(myarr[i]);
-            i++;
-
+            cy.log(d);
         }) 
-        for ( i = 1; i < 80; i++)
-       {
-    if (myarr[i - 1] >myarr[i])
-    expect(false).to.be.false 
-    else
-    expect(true).to.be.true
-     }
-        
-
     }
 
 }
