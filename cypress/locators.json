@@ -37,7 +37,7 @@
     "sortLowtohigh": "#s-result-sort-select_1",
     "sortHightolow": "#s-result-sort-select_2",
     "sortAvgcustomerReview": "#s-result-sort-select_3",
-    "sortNewestArrival": "#s-result-sort-select_4",
+    "sortNewestArrival": "#s-result-sort-select_4"
 
   }
 }
