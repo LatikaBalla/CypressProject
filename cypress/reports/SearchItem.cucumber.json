@@ -23,7 +23,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 1715000000
+              "duration": 2264000000
             }
           },
           {
@@ -33,7 +33,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 5306000000
+              "duration": 3267000000
             }
           },
           {
@@ -42,8 +42,9 @@
             "line": 11,
             "name": "Validate the Category For Search Item",
             "result": {
-              "status": "passed",
-              "duration": 4636000000
+              "status": "failed",
+              "duration": 7052000000,
+              "error_message": "CypressError: Timed out retrying after 4050ms: `cy.should()` failed because this element is detached from the DOM.\n\n`<span class=\"a-size-base a-color-base\">Men's S...</span>`\n\nCypress requires elements be attached in the DOM to interact with them.\n\nThe previous command that ran was:\n\n  > `cy.eq()`\n\nThis DOM element likely became detached somewhere between the previous and current command.\n\nCommon situations why this happens:\n  - Your JS framework re-rendered asynchronously\n  - Your app code reacted to an event firing and removed the element\n\nYou typically need to re-query for the element or add 'guards' which delay Cypress from running new commands.\n    at $Cy.ensureAttached (https://www.amazon.in/__cypress/runner/cypress_runner.js:147879:76)\n    at applyChainers (https://www.amazon.in/__cypress/runner/cypress_runner.js:138841:12)\nFrom previous event:\n    at Context.shouldFn (https://www.amazon.in/__cypress/runner/cypress_runner.js:138873:63)\n    at Context.should (https://www.amazon.in/__cypress/runner/cypress_runner.js:138892:23)\n    at <unknown> (https://www.amazon.in/__cypress/runner/cypress_runner.js:133878:39)\n    at assertions (https://www.amazon.in/__cypress/runner/cypress_runner.js:134142:16)\nFrom previous event:\n    at $Cy.verifyUpcomingAssertions (https://www.amazon.in/__cypress/runner/cypress_runner.js:134155:62)\n    at verifyAssertions (https://www.amazon.in/__cypress/runner/cypress_runner.js:135599:19)\n    at whenStable (https://www.amazon.in/__cypress/runner/cypress_runner.js:153099:65)\n    at <unknown> (https://www.amazon.in/__cypress/runner/cypress_runner.js:152508:14)\nFrom Your Spec Code:\n    at SearchItemAction.selectCataegoryName (cypress/integration/PageObject/PageActions/SearchItemAction.js:23:13)\n    at Context.eval (cypress/integration/SearchItem/SearchItem.spec.js:16:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]
@@ -63,7 +64,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 5631000000
+              "duration": 1479000000
             }
           },
           {
@@ -73,7 +74,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 7066000000
+              "duration": 2939000000
             }
           },
           {
@@ -83,7 +84,7 @@
             "name": "Select Brand options",
             "result": {
               "status": "passed",
-              "duration": 9548000000
+              "duration": 2816000000
             }
           },
           {
@@ -93,7 +94,7 @@
             "name": "Validate list of Items with Brand Name",
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 314000000
             }
           }
         ]
@@ -113,7 +114,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 6344000000
+              "duration": 1671000000
             }
           },
           {
@@ -123,7 +124,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 9214000000
+              "duration": 3852000000
             }
           },
           {
@@ -133,7 +134,7 @@
             "name": "Select Price from Available option range",
             "result": {
               "status": "passed",
-              "duration": 9473000000
+              "duration": 3154000000
             }
           },
           {
@@ -143,7 +144,7 @@
             "name": "Validate list of Items with price range",
             "result": {
               "status": "passed",
-              "duration": 846000000
+              "duration": 634000000
             }
           }
         ]
@@ -163,7 +164,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 7237000000
+              "duration": 1974000000
             }
           },
           {
@@ -173,7 +174,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 8872000000
+              "duration": 4757000000
             }
           },
           {
@@ -183,7 +184,7 @@
             "name": "Enter min and max price range and Click on Go button",
             "result": {
               "status": "passed",
-              "duration": 5366000000
+              "duration": 4147000000
             }
           },
           {
@@ -193,7 +194,7 @@
             "name": "Validate list of Items with Entered price range",
             "result": {
               "status": "passed",
-              "duration": 450000000
+              "duration": 561000000
             }
           }
         ]
@@ -213,7 +214,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 7911000000
+              "duration": 1988000000
             }
           },
           {
@@ -223,7 +224,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 5779000000
+              "duration": 2936000000
             }
           },
           {
@@ -233,7 +234,7 @@
             "name": "Select the size of shoes",
             "result": {
               "status": "passed",
-              "duration": 11191000000
+              "duration": 2809000000
             }
           },
           {
@@ -243,7 +244,7 @@
             "name": "Select one of the Item",
             "result": {
               "status": "passed",
-              "duration": 10845000000
+              "duration": 4342000000
             }
           },
           {
@@ -253,7 +254,7 @@
             "name": "Validate list of Items with sizes",
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 50000000
             }
           }
         ]
@@ -273,7 +274,7 @@
             "name": "User should navigate to Website",
             "result": {
               "status": "passed",
-              "duration": 5945000000
+              "duration": 1794000000
             }
           },
           {
@@ -283,7 +284,7 @@
             "name": "User enter an Item and Click on Search Button",
             "result": {
               "status": "passed",
-              "duration": 12107000000
+              "duration": 3436000000
             }
           },
           {
@@ -293,7 +294,7 @@
             "name": "Select the Sort by option",
             "result": {
               "status": "passed",
-              "duration": 650000000
+              "duration": 652000000
             }
           },
           {
@@ -303,7 +304,7 @@
             "name": "Validate sorted list of Items",
             "result": {
               "status": "passed",
-              "duration": 5340000000
+              "duration": 5566000000
             }
           }
         ]
